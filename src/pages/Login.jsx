@@ -1,15 +1,15 @@
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router';
 import Form from '@components/Form';
-import Input from '@components/Input';
+import Input from '@/components/Input';
 import Modal from '@components/Modal';
 import Button from '@components/Button';
 
-const Cadastro = () => {
+const Login = () => {
 
-    const [data, setData] = useState({ nome: '', email: '', password: '' });
     const [showModal, setShowModal] = useState();
     const dialogRef = useRef(null);
+    const [data, setData] = useState({ email: '', password: '' });
 
     const handleData = (prop, value) => {
         const obj = {};
@@ -21,9 +21,9 @@ const Cadastro = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        showUserData(data);
         setShowModal(true);
-        setData({ nome: '', email: '', password: '' });
+        showUserData(data);
+        setData({ email: '', password: '' });
     }
 
     const showUserData = userData => console.log(userData);
@@ -36,7 +36,7 @@ const Cadastro = () => {
                 <div className='relative flex flex-col justify-center items-center gap-[15px] bg-[var(--white1)] w-[600px] h-[300px] p-[20px] rounded-lg'>
                     <span className='absolute top-[20px] right-[20px]'>
                         <Button bg='var(--white3)' styleType='extrasmall' handleFunction={() => setShowModal(false)}>
-                            <span className="material-symbols-outlined" style={{ fontSize: '20px'}}>close</span>
+                            <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>close</span>
                         </Button>
                     </span>
                     <h1 className='font-inter font-bold text-2xl text-[var(--color1)]'>Página em Desenvolvimento</h1>
@@ -46,14 +46,7 @@ const Cadastro = () => {
                     </Link>
                 </div>
             </Modal>
-            <Form title='Cadastre-se' text='Crie sua conta e arranje um emprego' handleFunction={handleSubmit}>
-                <Input
-                    type='text'
-                    label='Nome'
-                    placeholder='Digite seu nome'
-                    value={data.nome}
-                    handleInput={value => handleData('nome', value)}
-                />
+            <Form title='Login' text='Que bom ter você de volta!' handleFunction={handleSubmit}>
                 <Input
                     type='text'
                     label='Email'
@@ -73,4 +66,4 @@ const Cadastro = () => {
     );
 };
 
-export default Cadastro;
+export default Login;

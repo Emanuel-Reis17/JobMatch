@@ -33,13 +33,13 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
-ul {
+/* ul {
     list-style: none;
-}
+} */
 
 
 /* Mudar a cor do input quando usar o autocomplete */

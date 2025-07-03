@@ -6,7 +6,7 @@ const HomeLayout = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className='relative flex-grow flex justify-center items-center flex-col w-full h-full'>
                 <Outlet />
             </main>
             <Footer />
