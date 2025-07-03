@@ -3,7 +3,7 @@ import HomeLayout from '@layouts/HomeLayout';
 import Home from '@pages/Home';
 import Cadastro from '@pages/Cadastro';
 import CadastroVaga from '@pages/CadastroVaga';
-import Login from '@pages/login';
+import Login from '@pages/Login';
 
 const App = () => {
     

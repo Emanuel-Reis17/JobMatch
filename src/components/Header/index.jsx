@@ -10,7 +10,7 @@ const Header = () => {
                 </Link>
                 <ul className='flex justify-center items-center gap-[9px]'>
                     <li className='font-inter font-medium text-[var(--black3)] py-[9px] px-[25px] rounded-lg transiton duration-100 ease hover:cursor-pointer hover:bg-[var(--white2)]'>Sobre</li>
-                    <li className='font-inter font-medium text-[var(--black3)] py-[9px] px-[25px] rounded-lg transiton duration-100 ease hover:cursor-pointer hover:bg-[var(--white2)]'>Contato</li>
+                    <li className='font-inter font-medium text-[var(--black3)] py-[9px] px-[25px] rounded-lg transiton duration-100 ease hover:cursor-pointer hover:bg-[var(--color1)]'>Contato</li>
                     <li>
                         <Link to='/login'>
                             <Button type="button" text='Login' bg='var(--color1)' color='var(--white1)' styleType='small' />
