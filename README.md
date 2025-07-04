@@ -1,87 +1,73 @@
-# JobMatch - Conectando o talento certo à vaga certa.
+ # JobMatch - Conectando o talento certo à vaga certa.
 
-### Formulário de Candidatura
+Uma landing page de um site fictício para aplicação de vagas de emprego para candidatos e recrutadores.
 
-Um formulário para o candidato preencher com:
+**Propósito:** Aplicar meus conhecimentos como primeiro projeto em React e TailwindCSS 
 
-- Nome completo
-- Email
-- Telefone
-- Cargo de interesse (select)
-- Nível de experiência (junior/pleno/senior)
-- Currículo (upload ou link)
-- Mensagem adicional
-- Consentimento para uso dos dados (checkbox)
+## 🔗 Link de Acesso
 
-### Sugestões de Expansão e Melhoria
+🔗 Acesse a Landing Page aqui: https://job-match-seven.vercel.app
 
-#### 1. Landing Page Institucional
+## 📸 Prévia
 
-Crie uma **landing page** com seções como:
+![Reference name](/public/imgs/jobmatch_landingpage.png)
 
-- **Hero** (com um título impactante)
-- **Depoimentos de candidatos fictícios** (use `faker.js` para simulação)
-- **Como funciona o processo** (passo a passo visual)
-- **Benefícios da plataforma** (UX focus)
-- **Call to Action** para “Encontrar vaga” ou “Cadastrar currículo”
+## 🚀 Tecnologias Utilizadas
 
-#### 2. Página de Simulação de Vaga
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-Uma interface para visualizar detalhes de uma vaga:
+- JavaScript
+- React
+- React Router
+- TailwindCSS
 
-- Título da vaga
-- Salário (simulado)
-- Requisitos (lista)
-- Benefícios
-- Botão “Candidatar-se” que abre o formulário
-
-#### 3. Painel de Admin Simulado
-
-Simule um painel onde "recrutadores" visualizam os candidatos inscritos:
-
-- Lista de candidatos com filtro por vaga
-- Visualização individual com dados completos
-- Exportar para CSV (usando `papaparse` ou similar)
-
-#### 4. **Validação e UX Aprimorado**
-
-- Campos obrigatórios, mensagens de erro amigáveis
-- Máscaras de input (ex: telefone, CPF)
-- Feedback visual com Tailwind (inputs com `ring`, `border-red-500`, etc.)
-
-#### 5. **Animações e Transições**
-
-Use `framer-motion` ou o utilitário de animação do Tailwind para fazer:
-
-- Transições suaves entre páginas
-- Entradas animadas de componentes
-
----
-
-#### 6. **Responsividade e Acessibilidade**
-
-- Use práticas de **acessibilidade** (ex: `aria-*`, navegação por teclado)
-- Teste em diferentes resoluções (mobile-first)
-- Utilize o Tailwind para breakpoints (`sm`, `md`, `lg`, etc.)
-
-#### 7. **Deploy e Portfólio**
-
-- Faça o deploy no **Vercel** ou **Netlify**
-- Escreva um post explicando o projeto no Dev.to, LinkedIn ou Medium
-- Inclua no seu portfólio com um título atrativo
-
-### Estrutura de Pastas
+##  📦  Estrutura do Projeto
 
 ```plaintext
-src/
-├── components/
-├── pages/
-├── data/
-└── App.jsx
+[JobMatch]
+    |- public
+        |- imgs/
+    |- src
+        |- assets/
+        |- components
+        |- layouts
+        |- pages
+    |- index.html
+    |- README.md
 ```
 
-### Extras
+## 📲 Responsividade
 
-- Dark mode com Tailwind
-- Suporte multilíngue com `react-i18next`
-- Testes básicos com `Jest` ou `React Testing Library`
+A página está otimizada para os principais dispositivos e tamanhos de tela, incluindo:
+
+- Celulares (até 425px) Em breve
+- Tablets (até 768px) Em breve
+- Desktop
+
+## 🎨 Design Visual
+
+**Paleta de Cores:**
+
+| Cor            | Hex       |
+| -------------- | --------- |
+| Primária       | #134074   |
+| Secundária     | #13315c   |
+| Secundária     | #0b2545   |
+
+**Tipografia:**
+
+| Uso        | Fonte         |
+| ---------- | ------------- |
+| Principal  | Inter         |
+
+## ✨ Melhorias Futuras
+
+- Painel de Admin Simulado
+- Validação e UX Aprimorado
+- Animações e Transições
+- Responsividade e Acessibilidade
+- Dark mode
+- Suporte multlíngue
+
+Desenvolvido por **Emanuel Reis**
+emanuelemreis@gmai.com | @Emanuel-Reis17
