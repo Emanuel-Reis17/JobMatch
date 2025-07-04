@@ -15,7 +15,7 @@ const Form = ({ title, text, handleFunction, children, action = '/', method = 'G
                 );
             })}
 
-            <Button type='submit' text='Enviar' bg='var(--color1)' color='var(--white1)' />
+            <Button type='submit' text='Enviar' bg='primary' color='white1' />
         </form>
     )
 }

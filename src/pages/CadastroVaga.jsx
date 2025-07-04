@@ -4,7 +4,7 @@ import Form from '@components/Form';
 import Input from '@components/Input';
 import Select from '@components/Select';
 import Textarea from '@components/Textarea';
-import { vagas } from '@/assets/data';
+import { vagas } from '../assets/data';
 
 const CadastroVaga = () => {
 

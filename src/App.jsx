@@ -4,9 +4,10 @@ import Home from '@pages/Home';
 import Cadastro from '@pages/Cadastro';
 import CadastroVaga from '@pages/CadastroVaga';
 import Login from '@pages/Login';
+import NotFound from '@pages/NotFound';
 
 const App = () => {
-    
+
     return (
         <BrowserRouter>
             <Routes>
@@ -16,8 +17,8 @@ const App = () => {
                     <Route path='/cadastro-vaga/:cargoID' element={<CadastroVaga />} />
                     <Route path='/cadastro' element={<Cadastro />} />
                     <Route path='/login' element={<Login />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
-                <Route path="*" element={<h1>Not found 404</h1>}/>
             </Routes>
         </BrowserRouter>
     );

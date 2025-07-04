@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router';
 import Form from '@components/Form';
-import Input from '@/components/Input';
+import Input from '@components/Input';
 import Modal from '@components/Modal';
 import Button from '@components/Button';
 
@@ -33,16 +33,16 @@ const Login = () => {
     return (
         <>
             <Modal dialogRef={dialogRef}>
-                <div className='relative flex flex-col justify-center items-center gap-[15px] bg-[var(--white1)] w-[600px] h-[300px] p-[20px] rounded-lg'>
+                <div className='relative flex flex-col justify-center items-center gap-[15px]bg-white1 w-[600px] h-[300px] p-[20px] rounded-lg'>
                     <span className='absolute top-[20px] right-[20px]'>
-                        <Button bg='var(--white3)' styleType='extrasmall' handleFunction={() => setShowModal(false)}>
+                        <Button bg='white3' styleType='extrasmall' handleFunction={() => setShowModal(false)}>
                             <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>close</span>
                         </Button>
                     </span>
-                    <h1 className='font-inter font-bold text-2xl text-[var(--color1)]'>Página em Desenvolvimento</h1>
+                    <h1 className='font-inter font-bold text-2xl text-primary'>Página em Desenvolvimento</h1>
                     <p className='text-center text-base font-inter font-normal '>Este projeto não acaba por aqui, em breve terá novas páginas e funcionalidades para melhorar a experiência do usuário (<em>incluindo o estilo</em>).</p>
                     <Link to='/'>
-                        <Button text='Voltar a página inicial' bg='var(--color1)' color='var(--white1)' />
+                        <Button text='Voltar a página inicial' bg='primary' color='white1' />
                     </Link>
                 </div>
             </Modal>

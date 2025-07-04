@@ -3,7 +3,7 @@ const Button = ({ text, bg, color, styleType, children, handleFunction = false, 
     switch (styleType) {
         case 'extrasmall':
             return (
-                <button type={type} className={`flex justify-center items-center gap-[5px] ${bg ? `bg-[${bg}]` : ''} ${color ? `text-[${color}]` : ''} font-semibold text-sm font-inter p-[5px] cursor-pointer rounded-sm transition-all duration-300 ease hover:bg-[${bg}]/75 hover:scale-[0.95]`} onClick={handleFunction }>
+                <button type={type} className={`flex justify-center items-center gap-[5px] ${bg ? `bg-${bg}` : ''} ${color ? `text-${color}` : ''} font-semibold text-sm font-inter p-[5px] cursor-pointer rounded-sm transition-all duration-300 ease hover:bg-${bg}/75 hover:scale-[0.95]`} onClick={handleFunction }>
                     {text}{children}
                 </button>
             );
@@ -17,7 +17,7 @@ const Button = ({ text, bg, color, styleType, children, handleFunction = false, 
     const functionHandler = () => typeof handleFunction === 'function' ? handleFunction() : handleFunction;
 
     return (
-        <button type={type} className={`block ${bg ? `bg-[${bg}]` : ''} ${color ? `text-[${color}]` : ''} font-semibold text-base font-inter ${style} cursor-pointer rounded-[7px] transition-all duration-300 ease hover:bg-[${bg}]/75 hover:scale-[0.95]`} onClick={() => functionHandler()} >{text}{children}</button>
+        <button type={type} className={`block ${bg ? `bg-${bg}` : 'bg-primary'} ${color ? `text-${color}` : ''} font-semibold text-base font-inter ${style} cursor-pointer rounded-[7px] transition-all duration-300 ease hover:bg-${bg}/75 hover:scale-[0.95]`} onClick={() => functionHandler()} >{text}{children}</button>
     );
 };
 
